@@ -1,0 +1,351 @@
+/* coordinating the body font */
+body {
+  color: #333;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Almarai", sans-serif;
+  height: 175%;
+}
+/* coordinating the nav-bar */
+.nav-bar {
+  margin-top: -4%;
+  position: fixed;
+  width: 105%;
+  height: 11%;
+  background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0;
+}
+nav {
+  margin: 0 15%;
+}
+/* coordinating the items of the nav-bar */
+.listItems-1 {
+  margin-top: 10px;
+  color: white;
+  margin-left: 15px;
+  list-style-type: none;
+  font-size: 17.5px;
+  float: right;
+}
+.listItems-1:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+}
+/* coordinating the second left-most item of the nav-bar */
+#egy-flag {
+  top: 1%;
+  left: 24%;
+  position: fixed;
+}
+#flag {
+  cursor: pointer;
+  width: 60px;
+  height: 40px;
+  background-color: #6c757d;
+  border: 1px solid #6c757d;
+  border-radius: 5px;
+}
+#flag:hover {
+  border: 1px solid #5a6268;
+  background-color: #5a6268;
+}
+#e-flag {
+  margin-right: -15px;
+  position: relative;
+  width: 30px;
+  height: 20px;
+}
+#flag::before {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  right: 45px;
+  top: 15px;
+  border: 5px solid white;
+  border-color: white transparent transparent;
+}
+/* coordinating the left-most item of the nav-bar (the company logo) */
+#logo {
+  top: 0%;
+  left: 10%;
+  margin-right: -15px;
+  position: fixed;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+}
+/* here's the end of the nav-bar */
+/* here's the bottom-right button coordinates */
+#button {
+  position: fixed;
+  background-color: azure;
+  border-radius: 50%;
+  cursor: pointer;
+  bottom: 1%;
+  right: 1%;
+}
+#button-img {
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+/* coordinating the bottom-right button ended here */
+/* coordinating the first section */
+/* putting the background-image of the first section and coordinatio=ng it */
+.section1 {
+  background-size: cover;
+  background-position: 0px 14px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://elmawkaa.com/img/bg/home-bg.jpg");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+  /* filter: brightness(0.75); */
+}
+/* coordinating the headings of the first section */
+#heading2 {
+  color: #fff;
+  font-size: 50px;
+  padding-top: 17%;
+  padding-left: 250px;
+}
+#paragraph-after-h2 {
+  padding-left: 450px;
+  font-size: large;
+  color: white;
+}
+/* coordinating the text area of the search section of the first section */
+input {
+  width: 655px;
+  height: 3rem;
+  text-align: center;
+  font-size: x-large;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-family: "Almarai", sans-serif;
+}
+/* coordinating the search button */
+#input2 {
+  float: left;
+  background-color: #935cae;
+  border-radius: 5px;
+  width: 40px;
+  height: 50px;
+  margin-right: -5px;
+  border: none;
+  color: white;
+}
+#input2:hover {
+  background-color: #6f4584;
+  cursor: pointer;
+  color: black;
+}
+/* the firist section coordinatings is done */
+/* coordinating the second section */
+.section2 {
+  margin: 0 10%;
+}
+/* coordinating the heading of the second section */
+#heading-2 {
+  margin-left: 25%;
+  font-size: 45px;
+  margin-top: 6%;
+  color: #333;
+  font-family: "Almarai", sans-serif;
+  font-weight: 400;
+}
+/* coordinating the cards */
+/* putting the background-image and coordinating it */
+#img-1 {
+  background-image: url("https://cutt.ly/lPLLiHk");
+}
+#img-1:hover,
+#formHeading:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://cutt.ly/lPLLiHk");
+  color: white;
+}
+.cards {
+  margin-right: 20px;
+  border-radius: 15px;
+  background-size: cover;
+  width: 30%;
+  height: 400px;
+  background-repeat: no-repeat;
+  float: right;
+  cursor: pointer;
+}
+.cards:hover {
+  color: white;
+}
+.cards::before {
+  right: 14%;
+  top: 110%;
+  position: absolute;
+  content: " ";
+  width: 80px;
+  height: 3px;
+  background-color: #935cae;
+  margin-right: inherit;
+}
+/* coordinating the head of the cards */
+.sec-headings {
+  float: right;
+  margin: 50px;
+  padding: 5px;
+}
+/* coordinating the small notes at the end of each card */
+.lists1 {
+  margin-top: 350px;
+}
+/* coordinating every single note of the cards */
+.listItems2 {
+  margin-right: 6px;
+  font-size: 15px;
+  color: #333;
+  list-style-type: none;
+  float: right;
+  background: #ffffffa6;
+  border-radius: 10px;
+  padding: 3px 5px;
+}
+/*coordinating the first card*/
+#formHeading {
+  color: #333;
+}
+/* coordinating the second card */
+#img-2 {
+  background-image: url("https://cutt.ly/LPZpMer");
+}
+#img-2::before {
+  right: 40%;
+}
+/* coordinating the third card */
+#img-3 {
+  background-image: url("https://cutt.ly/aPZk9ZF");
+}
+#img-3::before,
+#img-6::before {
+  right: 65%;
+}
+/* coordinating the 4th card */
+#img-4 {
+  margin-top: 20px;
+  background-image: url("https://cutt.ly/PPZbfUT");
+}
+#img-4::before {
+  top: 178%;
+}
+/* coordinating the 5th card */
+#img-5 {
+  margin-top: 20px;
+  background-image: url("https://cutt.ly/PPZnPX5");
+}
+#img-5::before {
+  top: 178%;
+  right: 40%;
+}
+/* coordinating the 6th card */
+#img-6 {
+  margin-top: 20px;
+  background-image: url("https://cutt.ly/zPZmLF0");
+}
+#img-6::before {
+  top: 178%;
+  right: 65%;
+}
+/* coordinating the 7th card */
+#img-7 {
+  margin-top: 20px;
+  background-image: url("https://cutt.ly/yPZRQsl");
+}
+#img-7::before {
+  top: 245%;
+}
+/* coordinating the 8th card */
+#img-8 {
+  margin-top: 20px;
+  background-image: url("https://cutt.ly/CPZRAfJ");
+}
+#img-8::before {
+  top: 245%;
+  right: 40%;
+}
+/* coordinating the 9th card */
+#img-9 {
+  margin-top: 20px;
+  background-image: url("https://cutt.ly/wPZRNdu");
+}
+#img-9::before {
+  top: 245%;
+  right: 65%;
+}
+/* coordinating the 10th card */
+#img-10 {
+  margin-top: 20px;
+  background-image: url("https://cutt.ly/iPZUIvi");
+}
+#img-10::before {
+  top: 312%;
+}
+/* coordinating the 11th card */
+#img-11 {
+  margin-top: 20px;
+  background-image: url("https://cutt.ly/APZUZCJ");
+}
+#img-11::before {
+  top: 312%;
+  right: 40%;
+}
+/* coordinating the 12th card */
+#img-12 {
+  margin-top: 20px;
+  background-image: url("https://cutt.ly/cPZIe91");
+}
+#img-12::before {
+  top: 312%;
+  right: 65%;
+}
+/* coordinating the 13th card */
+#img-13 {
+  margin-top: 20px;
+  background-image: url("https://cutt.ly/OPZIl7G");
+}
+#img-13::before {
+  top: 380%;
+}
+/* coordinating the 14th card */
+#img-14 {
+  margin-top: 20px;
+  background-image: url("https://cutt.ly/qPZIOmt");
+}
+#img-14::before {
+  top: 380%;
+  right: 40%;
+}
+/* footer */
+.footer {
+  height: 50px;
+  margin-top: 175%;
+  background-color: #333;
+}
+#linkedIn {
+  margin-right: 100px;
+}
+/* footer buttons */
+.f-icons {
+  background-color: #333;
+  border: none;
+  float: right;
+  margin: 15px 10px 10px 0;
+  cursor: pointer;
+}
+.f-icons:hover {
+  background-color: #935cae;
+}
+#f-paragraph {
+  padding: 15px 10px 10px 10%;
+  color: #fff;
+}

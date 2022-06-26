@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>اطلب عرض سعر من منصة الموقع</title>
+        <link rel="icon" href="https://www.elmawkaa.com/img/htmlLogo.png">
+        <link rel="stylesheet" href="./css/form.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="nav-bar">
+            <!-- the nav-bar started here -->
+            <nav>
+                <ul id="list">
+                    <li class="listItems-1"><img id="logo" src="https://elmawkaa.com/img/logo.png"></li>
+                    <li class="listItems-1">مواد بناء</li>
+                    <li class="listItems-1">أحدث الطلبيات</li>
+                    <li class="listItems-1">كيف يعمل؟</li>
+                    <li class="listItems-1">سجل كمورد</li>
+                    <li class="listItems-1">المدونة</li>
+                    <li class="listItems-1">الباقات</li>
+                    <li class="listItems-1">اتصل بنا</li>
+                </ul>
+                <!-- here's the login button -->
+                <div>
+                    <a id="loginButton">تسجيل الدخول</a>
+                </div>
+                <!-- here's the flag -->
+                <div id="egy-flag">
+                    <button id="flag"><img id="e-flag" src="https://www.elmawkaa.com/flags/4x3/egy.svg" alt="egy-flag"></button>
+                </div>
+            </nav>
+        </div>
+            <!-- the nav-bar ended here -->
+            <!-- the form started here -->
+            <!-- this is the main div to put the blured background-img -->
+            <div id="section1">
+                <!-- here's the fixed buttons & img before the form -->
+                <div class="form">
+                    <div class="beforeForm">
+                        <a id="infoButton">اضغط هنا لتعرف كيف تعمل المنصة</a>
+                        <h3>طلب عرض سعر</h5>
+                        <h1>خرسانة جاهزة</h3>
+                        <img class="image" src="https://cutt.ly/lPLLiHk">
+                    </div>
+                    <!-- here's the icons of the four forms -->
+                    <div class="form-icons">
+                        <!-- this icon is for form 1 -->
+                        <a class="form-icon" id="icon1"><span>1</span>معلومات المنتج</a>
+                        <!-- this icon is for form 2 -->
+                        <a class="form-icon" id="icon2"><span>2</span>المشروع</a>
+                        <!-- this icon is for form 3 -->
+                        <a class="form-icon" id="icon3"><span>3</span>تفاصيل اخري</a>
+                        <!-- this icon is for form 4 -->
+                        <a class="form-icon" id="icon4"><span>4</span>ازاي نوصلك</a>
+                    </div>
+                    <!-- here's the 1st form (out of 4) -->
+                    <div class="form1" id="formOne">
+                        <!-- this is the first label & input of the 1st form -->
+                        <label class="form1Label" >اسم المنتج المطلوب<span class="spp">*</span></label>
+                        <input class="form1Input" type="text" value="خرسانة جاهزة" readonly> 
+                        <!-- this is the 2nd label & input of the 1st form -->
+                        <label class="form1Label">الكمية<span class="spp">*</span></label>
+                        <input class="form1Input" type="number" placeholder="ادخل الكمية" id="form1Required">
+                        <p class="required" id="required1">هذه الخانة مطلوبة (يجب ادخال كمية اكبر من 20)</p>
+                        <!-- this is the 3rd label & input of the 1st form -->
+                        <label class="form1Label">الوحدة<span class="spp">*</span></label>
+                        <input class="form1Input" list="items" id="item" value="م3" readonly>
+                        <br>
+                        <br>
+                        <br>
+                        <!-- this is the 4th label & input of the 1st form -->
+                        <label class="form1Label" for="f02" id="form1Label">اضف صورة للمنتج</label>
+                        <input class="form1Input" id="f02" type="file" placeholder="اضف صورة للمنتج" />
+                        <br>
+                        <br>
+                        <br>
+                        <!-- this is the 5th label & input of the 1st form -->
+                        <label for="itemType" class="form1Label">نوع العنصر<span class="spp">*</span></label>
+                        <select id="itemTypes" class="form1InputLists">
+                            <option class="optionItems" value="اسقف" selected >اسقف</option>
+                            <option class="optionItems" value="اعمدة">اعمدة</option>
+                            <option class="optionItems" value="قواعد مسلحة وسملات">قواعد مسلحة و سملات</option>
+                            <option class="optionItems" value="لبشة مسلحة">لبشة مسلحة </option>
+                            <option class="optionItems" value="لبشة عادية">لبشة عادية </option>
+                            <option class="optionItems" value="حوائط مسلحة">حوائط مسلحة </option>
+                            <option class="optionItems" value="أرضية عادية">ارضية عادية </option>
+                            <option class="optionItems" value="اخري">اخري</option>
+                        </select>
+                        <!-- this is the 6th label & input of the 1st form -->
+                        <label for="itemType" class="form1Label">المحتوى الأسمنتى كجم/م3<span class="spp">*</span></label>
+                        <select id="itemTypes" class="form1InputLists">
+                            <option class="optionItems" value="250" >250</option>
+                            <option class="optionItems" value="300">300</option>
+                            <option class="optionItems" value="315">315</option>
+                            <option class="optionItems" value="350" selected>350</option>
+                            <option class="optionItems" value="400">400</option>
+                        </select>
+                        <!-- this is the 7th label & input of the 1st form -->
+                        <label for="itemType" class="form1Label">الإجهاد المطلوب كجم/سم2<span class="spp">*</span></label>
+                        <select id="itemTypes" class="form1InputLists">
+                            <option class="optionItems" value="150" >150</option>
+                            <option class="optionItems" value="200">200</option>
+                            <option class="optionItems" value="250" selected>250</option>
+                            <option class="optionItems" value="300" >300</option>
+                            <option class="optionItems" value="350">350</option>
+                            <option class="optionItems" value="400">400</option>
+                        </select>
+                        <!-- this is the 8th label & input of the 1st form -->
+                        <label for="itemType" class="form1Label">نوع الاسمنت<span class="spp">*</span></label>
+                        <select id="itemTypes" class="form1InputLists">
+                            <option class="optionItems" value="عادي" selected >عادي</option>
+                            <option class="optionItems" value="مقاوم">مقاوم</option>
+                        </select>
+                        <!-- this is the 9th label & input of the 1st form -->
+                        <label for="itemType" class="form1Label">طول ذراع المضخة بالمتر <span class="spp">*</span></label>
+                        <select id="itemTypes" class="form1InputLists">
+                            <option class="optionItems" value="36" selected>36</option>
+                            <option class="optionItems" value="42">42</option>
+                            <option class="optionItems" value="47" >47</option>
+                            <option class="optionItems" value="49" >49</option>
+                            <option class="optionItems" value="52">52</option>
+                            <option class="optionItems" value="55">55</option>
+                            <option class="optionItems" value="55'>'">55></option>
+                            <option class="optionItems" value="غير مطلوب مضخة">غير مطلوب مضخة</option>
+                        </select>
+                    </div>
+                    <!-- the first form ended here -->
+                    <!-- the second form starts here -->
+                    <div class="form2" id="formTwo">
+                        <!-- the first label of the 2nd form -->
+                        <label for="itemType" class="form1Label" >مكان المشروع<span class="spp">*</span></label>
+                        <select class="form1InputLists" placeholder="اختر مكان المشروع" id="form2Input1">
+                            <option class="optionItems" value="اختر مكان المشروع" disabled selected hidden >اختر مكان المشروع</option>
+                            <option class="optionItems" value="6 اكتوبر -الجيزة">6 اكتوبر الجيزة </option>
+                            <option class="optionItems" value="القاهرة الجديدة - التجمع - القاهرة">القاهرة الجديدة - التجمع - القاهرة </option>
+                            <option class="optionItems" value="العاصمة الادارية الجديدة - القاهرة">العاصمة الادارية الجديدة - القاهرة</option>
+                            <option class="optionItems" value="مدينة بدر -القاهر">مدينة بدر -القاهرة</option>
+                            <option class="optionItems" value="زهراء المعادي- القاهرة" >زهراء المعادي -القاهرة</option>
+                            <option class="optionItems" value="الفيوم - الفيوم">الفيوم- الفيوم</option>
+                            <option class="optionItems" value="ابو رواش - الجيزة ">ابو رواش - الجيزة</option>
+                        </select>
+                        <p class="required" id="required21">هذه الخانة مطلوبة</p>
+                        <!-- the 2nd label of the 2nd form  -->
+                        <label class="form1Label">عنوان المشروع <span class="spp">*</span></label>
+                        <input class="form1Input" id= "form2Input3"type="text" placeholder="ادخل عنوان المشروع">
+                        <p class="required" id="required23">هذه الخانة مطلوبة</p>
+                        <!-- the 3rd label of the 2nd form -->
+                        <label for="itemType" class="form1Label">مرحلة المشروع<span class="spp">*</span></label>
+                        <select class="form1InputLists" id="form2Input2">
+                            <option class="optionItems" value="مرحلة التنفيذ" selected >مرحلة التنفيذ</option>
+                            <option class="optionItems" value="مرحلة تقديم المناقصات">مرحلة تقديم المناقصات</option>
+                        </select>
+                        <p class="required" id="required22">هذه الخانة مطلوبة</p>
+                        <!-- the 4th label of the 2nd form -->
+                        <label class="form1Label">عايز تنفذ الطلبية امتي<span class="spp">*</span></label>
+                        <input class="form1Input" id="form2Input4" type="date">
+                        <p class="required" id="required24">هذه الخانة مطلوبة</p>
+                    </div>
+                    <!-- the 2nd form ended here -->
+                    <!-- the 3rd form starts here -->
+                    <div class="form3" id="formThree">
+                        <!-- the 1st label of the 3rd form -->
+                        <label for="itemType" class="form1Label">طريقة الدفع<span class="spp">*</span></label>
+                        <select id="itemTypes" class="form1InputLists">
+                            <option class="optionItems" value="كاش او تحويل بنكي" >كاش او تحويل بنكي</option>
+                            <option class="optionItems" value="اجل">اجل</option>
+                        </select>
+                        <!-- the 2nd label of the 3rd form -->
+                        <label class="form1Label" >تفاصيل اخري خاصة بالطلب</label>
+                        <textarea></textarea> 
+                    </div>
+                    <!-- the 3rd form ended here -->
+                    <!-- the 4th form starts here -->
+                    <div class="form4" id="formFour">
+                        <!-- the 1st label of the 4th form -->
+                        <label class="form1Label">اسم شركتك ايه؟<span class="spp">*</span></label>
+                        <input class="form1Input" type="text" placeholder="اسم شركتك ايه؟"  id="input41">
+                        <p class="required" id="required41">هذه الخانة مطلوبة</p>
+                        <!-- the 2nd label of the 4th form -->
+                        <label class="form1Label">اسم الشخص المفوض ثنائي<span class="spp">*</span></label>
+                        <input class="form1Input" type="text" placeholder="اسم الشخض المفوض ثنائي" id="input42">
+                        <p class="required" id="required42">هذه الخانة مطلوبة</p>
+                        <!-- the 3rd label of the 4th form -->
+                        <label class="form1Label">رقم الموبايل المسجل علي الواتساب<span class="spp">*</span></label>
+                        <input class="form1Input" type="number" placeholder="مثال:01012345678" id="input43">
+                        <p class="required" id="required43">هذه الخانة مطلوبة (يجب ادخال رقم صحيح)</p>
+                        <!-- the 4th label of the 4th form -->
+                        <label class="form1Label">ايميلك<span class="spp">*</span></label>
+                        <input class="form1Input" type="email" placeholder="مثال : mohamed@gmail.com" id="input44">
+                        <p class="required" id="required44">هذه الخانة مطلوبة</p>
+                        <br><br>
+                        <!-- the 5th label of the 4th form -->
+                        <input class="form1Input" type="checkbox" style="display: inline;" checked>
+                        <label class="form1Label" style="display: inline;">تذكرني علي هذا الجهاز</label>
+                        <!-- the 6th label of the 4th form -->
+                        <br><br>
+                        <input class="form1Input" type="checkbox" style="display: inline;" checked>
+                        <label class="form1Label" style="display: inline;">تذكر المشروع</label>
+                        <!-- the 4th form ended here  -->
+                    </div>
+                    <!-- here are the four ( next & previous ) buttons for every form -->
+                    <button id="form3Next" class="formNext">التالي</button>
+                    <button id="form3Previous" class="formPrevious">السابق</button>
+                    <button id="form4Next" class="formNext">اطلب</button>
+                    <button id="form4Previous" class="formPrevious">السابق</button>
+                    <button id="form1Next" class="formNext">التالي</button>
+                    <button id="form1Previous" class="formPrevious">السابق</button>
+                    <button id="form2Next" class="formNext">التالي</button>
+                    <button id="form2Previous" class="formPrevious">السابق</button>
+                    <!-- here's the js file -->
+                    <script src="index.js">
+                    </script>
+                </div>         
+            </div>
+            <div class="footer">
+                <footer>
+                    <button id="linkedIn" class="f-icons"><img src="https://wuilt.com/images/linkedin-icon.svg"></button>
+                    <button id="insta" class="f-icons"><img src="https://wuilt.com/images/instagram-icon.svg"></button>
+                    <button id="twitter" class="f-icons"><img src="https://wuilt.com/images/twitter-icon.svg"></button>
+                    <button id="faceBook" class="f-icons"><img src="https://wuilt.com/images/facebook-icon.svg"></button>
+                    <p id="f-paragraph">حقوق النشر 2022 - Elmawkaa, Inc. | جميع الحقوق محفوظة                </p>
+                </footer>
+            </div>
+    </body>
+</html>

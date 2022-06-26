@@ -1,0 +1,324 @@
+/* coordinating the body font */
+body {
+  color: #333;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Almarai", sans-serif;
+  height: auto;
+  background-image: linear-gradient(
+      rgba(256, 256, 256, 0.6),
+      rgba(256, 256, 256, 0.6)
+    ),
+    url("https://elmawkaa.com/img/bg/home-bg.jpg");
+}
+/* coordinating the nav-bar */
+.nav-bar {
+  margin-top: -8%;
+  position: fixed;
+  width: 100%;
+  height: 9%;
+  background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0;
+}
+nav {
+  margin: -1% 15%;
+}
+/*coordinating the list*/
+#list {
+  position: fixed;
+  right: 20%;
+}
+/* coordinating the items of the nav-bar */
+.listItems-1 {
+  margin-top: 15px;
+  color: white;
+  margin-left: 15px;
+  list-style-type: none;
+  font-size: 15px;
+  float: right;
+}
+.listItems-1:hover,
+#loginButton:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+}
+/* coordinating the second left-most item of the nav-bar */
+#egy-flag {
+  top: 1%;
+  left: 10%;
+  position: fixed;
+}
+#flag {
+  cursor: pointer;
+  width: 45px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid #6c757d;
+  border-radius: 2px;
+  margin-top: 5px;
+}
+#flag:hover {
+  border: 1px solid #5a6668;
+  background-color: transparent;
+}
+#e-flag {
+  border-radius: 50%;
+  margin-right: -10px;
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+#flag::before {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  right: 32px;
+  top: 20px;
+  border: 5px solid white;
+  border-color: white transparent transparent;
+}
+/* coordinating the left-most item of the nav-bar (the company logo) */
+#logo {
+  top: 0%;
+  position: fixed;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+}
+#loginButton {
+  color: white;
+  position: fixed;
+  margin-top: 30px;
+}
+/* here's the end of the nav-bar */
+/*here's the start of the form section*/
+/*coordinating the main form*/
+/*coordinating the positions and some other coordinates of tha main one*/
+.form {
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  width: 700px;
+  height: auto;
+  margin: 8% 23%;
+  background-color: #fff;
+}
+.beforeForm {
+  margin-top: 3%;
+  margin-right: 30%;
+  direction: rtl;
+}
+/*coordinating the first-top button*/
+#infoButton {
+  font-size: large;
+  margin: 5px;
+  padding: 10px;
+  color: #935cae;
+  border: 1px solid #935cae;
+  text-align: center;
+  border-radius: 10px;
+}
+#infoButton:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #935cae;
+}
+/*coordinating paragraphs after the button*/
+h3 {
+  color: #868ba1;
+  margin: 50px 80px -15px 0;
+  font-size: large;
+}
+h1 {
+  color: #868ba1;
+  margin-right: 50px;
+}
+/*coordinating the img of the van*/
+.image {
+  margin-right: 25px;
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+}
+/* coordinating the 4 icons of the 4 forms together */
+.form-icons {
+  direction: rtl;
+  font-size: large;
+  margin: 25px;
+}
+/* coordinating the form-icon itself */
+.form-icon {
+  color: #aaa;
+  background-color: #e9ecef;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px 10px;
+}
+.form-icon:hover {
+  border-radius: 0px;
+  cursor: default;
+}
+span {
+  border-radius: 70%;
+  padding: 2px;
+  margin: 5px;
+  border: 1px solid #aaa;
+}
+#icon1 {
+  color: #fff;
+  background-color: #935cae;
+}
+/* coordinating somethings for the 1st form */
+.form1,
+.form2,
+.form3,
+.form4 {
+  direction: rtl;
+  padding: 30px 30px 80px 30px;
+  margin: 50px 10px;
+  background-color: #e9ecef;
+  border-radius: 10px;
+}
+.form2,
+.form3,
+.form4 {
+  display: none;
+}
+/* coordinating the labels of the form */
+.form1Label {
+  margin: 10px 0px;
+  color: #aaa;
+  display: block;
+}
+/* coordinating the input-area of the form */
+.form1Input {
+  font-family: "Almarai", sans-serif;
+  color: #333;
+  padding: 10px 10px 10px 100px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+}
+/* coordinating the button of adding photo */
+[type="file"] {
+  display: none;
+}
+#form1Label {
+  border: 1px solid #935cae;
+  padding: 15px;
+  display: inline;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #333;
+}
+/* coordinating the selection list of the last 4 labels of the form */
+.optionItems {
+  cursor: pointer;
+  color: #333;
+  font-size: large;
+}
+.form1InputLists {
+  font-family: "Almarai", sans-serif;
+  color: #333;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  width: 600px;
+  cursor: pointer;
+}
+/* coloring the '*' of the lables */
+.spp {
+  color: red;
+  border: none;
+  font-size: large;
+}
+/* the next button */
+.formNext {
+  text-decoration: none;
+  color: white;
+  background-color: #935cae;
+  font-size: large;
+  float: left;
+  margin-top: -45px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}
+/* the previous button */
+.formPrevious {
+  text-decoration: none;
+  color: #aaa;
+  background-color: #e9ecef;
+  font-size: large;
+  float: right;
+  margin-top: -45px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  cursor: default;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+/* hiding the next & previous buttons of the hidden forms */
+#form2Next,
+#form2Previous,
+#form3Next,
+#form3Previous,
+#form4Next,
+#form4Previous {
+  display: none;
+  background-color: #935cae;
+  color: #fff;
+}
+/* cordinating the width of the 2nd form input area */
+#form2Input1,
+#form2Input2 {
+  width: 260px;
+}
+/* cordinating the width of the 3rd form input area */
+#form2Input3 {
+  width: 150px;
+}
+/* cordinating the width of the 4th form input area */
+#form2Input4 {
+  width: 145px;
+}
+.hidden {
+  display: none;
+}
+/* coordenating the textarea of the 3rd form */
+textarea {
+  width: 200px;
+  height: 150px;
+}
+.required {
+  float: inline-start;
+  color: red;
+  font-size: small;
+  display: none;
+}
+/* footer */
+.footer {
+  height: 50px;
+  margin-top: auto;
+  background-color: #333;
+}
+#linkedIn {
+  margin-right: 100px;
+}
+/* footer buttons */
+.f-icons {
+  background-color: #333;
+  border: none;
+  float: right;
+  margin: 15px 10px 10px 0;
+  cursor: pointer;
+}
+.f-icons:hover {
+  background-color: #935cae;
+}
+#f-paragraph {
+  padding: 15px 10px 10px 10%;
+  color: #fff;
+}
